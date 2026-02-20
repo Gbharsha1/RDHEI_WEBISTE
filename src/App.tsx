@@ -21,11 +21,11 @@ export default function App() {
   const [isPptExpanded, setIsPptExpanded] = useState(false);
 
   const pptFiles = [
-    { name: 'Review 0', path: '/Review_0.pptx' },
-    { name: 'Review 1', path: '/Review_1.pptx' },
-    { name: 'Review 2', path: '/Review_2.pptx' },
-    { name: 'Review 3', path: '/Review_3.pptx' },
-    { name: 'Final Review', path: '/Final_Review.pptx' },
+    { name: 'Review 0', path: './Review_0.pptx' },
+    { name: 'Review 1', path: './Review_1.pptx' },
+    { name: 'Review 2', path: './Review_2.pptx' },
+    { name: 'Review 3', path: './Review_3.pptx' },
+    { name: 'Final Review', path: './Final_Review.pptx' },
   ];
 
   return (
@@ -133,7 +133,7 @@ export default function App() {
             <h3 className="text-xl font-bold text-zinc-900 mb-6 text-center">Process Framework</h3>
             <div className="w-full flex justify-center">
               <img
-                src="/Basic_idea.png"
+                src="./Basic_idea.png"
                 alt="System Architecture Framework"
                 className="w-full max-w-5xl h-auto object-contain"
               />
@@ -199,11 +199,11 @@ export default function App() {
 
           <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-4 lg:gap-3 xl:gap-8">
             {[
-              { title: "Original Image", img: "/Lena.jpg", desc: "Standard test image (Lena)" },
-              { title: "Encrypted Image", img: "/embedded_image.png", desc: "After Image Encryption and Embedded Encryption key" },
-              { title: "Data Embedded", img: "/embedded_image_with_secret.png", desc: "Encrypted image with hidden payload" },
-              { title: "Marked Encrypted", img: "/marked_encrypted_image.png", desc: "Marked encrypted image" },
-              { title: "Recovered Image", img: "/Lena.jpg", desc: "Perfectly reconstructed (PSNR = +∞)" }
+              { title: "Original Image", img: "./Lena.jpg", desc: "Standard test image (Lena)" },
+              { title: "Encrypted Image", img: "./embedded_image.png", desc: "After Image Encryption and Embedded Encryption key" },
+              { title: "Data Embedded", img: "./embedded_image_with_secret.png", desc: "Encrypted image with hidden payload" },
+              { title: "Marked Encrypted", img: "./marked_encrypted_image.png", desc: "Marked encrypted image" },
+              { title: "Recovered Image", img: "./Lena.jpg", desc: "Perfectly reconstructed (PSNR = +∞)" }
             ].map((item, i, arr) => (
               <Fragment key={i}>
                 <motion.div
@@ -321,7 +321,7 @@ export default function App() {
             <h3 className="text-xl font-bold text-zinc-900 mb-6 text-center">Process Framework</h3>
             <div className="w-full flex justify-center">
               <img
-                src="/TotalProcess.png"
+                src="./TotalProcess.png"
                 alt="System Architecture Framework"
                 className="w-full max-w-5xl h-auto object-contain"
               />
@@ -457,7 +457,7 @@ export default function App() {
               </AnimatePresence>
             </div>
 
-            <a href="/Harsha_fr.pdf" download className="flex items-center justify-between p-6 bg-white border border-zinc-200 rounded-xl hover:border-indigo-300 hover:shadow-md transition-all group">
+            <a href="./Harsha_fr.pdf" download className="flex items-center justify-between p-6 bg-white border border-zinc-200 rounded-xl hover:border-indigo-300 hover:shadow-md transition-all group">
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-blue-50 text-blue-600 rounded-lg group-hover:bg-blue-100 transition-colors">
                   <FileText className="w-6 h-6" />
