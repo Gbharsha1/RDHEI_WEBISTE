@@ -1,0 +1,5 @@
+{
+  "name": "RDH in Encrypted Images",
+  "description": "Showcase website for Reversible Data Hiding in Encrypted Images using Multi-MSB Prediction and Huffman Coding.",
+  "requestFramePermissions": []
+}
